@@ -6,9 +6,15 @@ $third-color: #99E2D0;
 $background-page-color: rgb(231, 231, 231);
 $background-color-footer: rgb(47, 47, 47);
 $primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
-.all__page {
+$font__titre: 'Shrikhand',
+cursive;
+$font__page: 'Roboto',
+sans-serif;
+.page {
     font-size: 16px;
     background-color: $background-page-color;
+    font-family: $font__page;
+    font-weight: 100;
     & a {
         text-decoration: none;
     }
@@ -24,16 +30,18 @@ $primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
     justify-content: center;
     align-items: center;
     &__logo {
+        font-family: $font__titre;
         font-size: 4rem;
     }
 }
 
 .search {
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
     &__city {
         margin-left: 1.5rem;
     }
@@ -43,41 +51,49 @@ $primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
 }
 
 .block__titre {
-    height: 350px;
-    font-size: 1.5rem;
+    height: 300px;
+    font-size: 1.2rem;
     text-align: center;
     background-color: rgb(245, 245, 245);
     margin: 0 -10px 0 -10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    & h2 {
+        padding: 0 5rem 0 5rem;
+    }
     & p {
+        padding: 0 3rem 0 3rem;
         margin-top: -10px;
     }
     & a {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
         border-radius: 2rem;
-        width: 60%;
+        width: 18rem;
+        box-shadow: $primary-box-shadow;
         height: 4rem;
         background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
         color: white;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-weight: bold;
     }
 }
 
 .nav {
     background-color: $primary-background-color;
-    height: 550px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     margin: 0 -10px 0 -10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    padding-bottom: 2rem;
+    font-weight: bold;
     & h2 {
         margin-left: 1.5rem;
         margin-top: 3rem;
+        font-size: 1.8rem;
     }
     &__liste {
         list-style: none;
@@ -85,7 +101,6 @@ $primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
         display: flex;
         flex-flow: wrap row;
         justify-content: space-around;
-        height: 400px;
         padding-right: 1rem;
         margin-top: -1.5rem;
         &--choix {
@@ -110,7 +125,7 @@ $primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
                 margin-left: -2.5rem;
                 display: flex;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: center;
             }
         }
     }
@@ -119,9 +134,10 @@ $primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
 .section {
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
     &__titre {
         margin: 3rem 0 0.5rem 1.5rem;
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     & .all__carte {
         display: flex;
@@ -136,41 +152,57 @@ $primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
     background-color: $primary-background-color;
     display: flex;
     flex-direction: column;
-    border-radius: 30px;
+    border-radius: 1rem;
     margin: 1rem;
     box-shadow: $primary-box-shadow;
+    position: relative;
+    overflow: hidden;
     &__image {
         height: 200px;
         background-color: $secondary-color;
-        border-radius: 30px 30px 0 0;
         overflow: hidden;
+        position: relative;
+        display: flex;
+        align-items: center;
+        &--nouveau {
+            top: 1rem;
+            right: 1rem;
+            position: absolute;
+            font-weight: bold;
+            background-color: $third-color;
+            color: rgb(0, 123, 92);
+            width: 6rem;
+            height: 2rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0.1rem;
+        }
         & img {
             object-fit: fill;
             width: 100%;
             height: auto;
             display: flex;
+            margin-bottom: 4rem;
         }
-    }
-    &__nouveau {
-        position: relative;
-        left: 20rem;
-        bottom: 10rem;
-        background-color: $third-color;
-        color: rgb(0, 123, 92);
-        width: 4rem;
-        height: 2rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0.1rem;
     }
     &__info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 80px;
-        margin: 0 1rem 1rem 1rem;
+        height: auto;
+        margin: 0 1rem 0 1rem;
+        font-size: 1.2rem;
+        &--titre {
+            margin-bottom: -1rem;
+            font-weight: bold;
+        }
+        &--coeur {
+            i:hover {
+                color: pink;
+            }
+        }
     }
 }
 
@@ -180,4 +212,25 @@ $primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
     margin: 0 -10px -10px -10px;
     height: 200px;
     padding: 1rem;
+    &__titre {
+        font-family: $font__titre;
+        font-size: 1.5rem;
+        margin: 0rem 0 0.5rem 1rem;
+    }
+    &__liste {
+        list-style: none;
+        font-size: 1.1rem;
+        margin-left: -1.5rem;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        &--awe {
+            & i {
+                text-align: center;
+                width: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
 }
