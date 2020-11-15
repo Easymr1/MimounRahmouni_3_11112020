@@ -4,6 +4,8 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $third-color: #99E2D0;
 $background-page-color: rgb(231, 231, 231);
+$background-color-footer: rgb(47, 47, 47);
+$primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
 .all__page {
     font-size: 16px;
     background-color: $background-page-color;
@@ -81,21 +83,23 @@ $background-page-color: rgb(231, 231, 231);
         list-style: none;
         counter-reset: li;
         display: flex;
-        flex-direction: column;
+        flex-flow: wrap row;
         justify-content: space-around;
         height: 400px;
+        padding-right: 1rem;
         margin-top: -1.5rem;
         &--choix {
             background-color: $secondary-background-color;
-            width: 90%;
+            width: 24rem;
             height: 6rem;
+            margin: 1rem;
             display: flex;
             justify-content: space-around;
             align-items: center;
             counter-increment: li;
             border-radius: 30px;
             background-color: $secondary-background-color;
-            box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
+            box-shadow: $primary-box-shadow;
             &::before {
                 content: counter(li);
                 width: 2rem;
@@ -115,24 +119,26 @@ $background-page-color: rgb(231, 231, 231);
 .section {
     display: flex;
     flex-direction: column;
-    font-size: 1.5rem;
     &__titre {
-        margin-left: 1.5rem;
+        margin: 3rem 0 0.5rem 1.5rem;
+        font-size: 2rem;
     }
     & .all__carte {
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 }
 
 .carte {
-    width: 90%;
+    width: 25rem;
     height: 300px;
     background-color: $primary-background-color;
     display: flex;
     flex-direction: column;
     border-radius: 30px;
+    margin: 1rem;
+    box-shadow: $primary-box-shadow;
     &__image {
         height: 200px;
         background-color: $secondary-color;
@@ -143,16 +149,35 @@ $background-page-color: rgb(231, 231, 231);
             width: 100%;
             height: auto;
             display: flex;
-            align-items: ;
-            position: relative;
         }
+    }
+    &__nouveau {
+        position: relative;
+        left: 20rem;
+        bottom: 10rem;
+        background-color: $third-color;
+        color: rgb(0, 123, 92);
+        width: 4rem;
+        height: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.1rem;
     }
     &__info {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        height: 100px;
+        height: 80px;
         margin: 0 1rem 1rem 1rem;
     }
+}
+
+.footer {
+    background-color: $background-color-footer;
+    color: white;
+    margin: 0 -10px -10px -10px;
+    height: 200px;
+    padding: 1rem;
 }
