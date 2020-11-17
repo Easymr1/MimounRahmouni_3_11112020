@@ -1,0 +1,179 @@
+.page {
+  font-size: 16px;
+  background-color: #e7e7e7;
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+}
+
+.page a {
+  text-decoration: none;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.header__block {
+  height: 5rem;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__block--awe {
+  position: absolute;
+  left: 2rem;
+  color: black;
+}
+
+.header__block--logo {
+  font-size: 2rem;
+  font-family: "Shrikhand", cursive;
+}
+
+.header__image {
+  height: 21rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
+}
+
+.section {
+  border-radius: 2.5rem 2.5rem 0 0;
+  background-color: whitesmoke;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: -4rem;
+  position: relative;
+}
+
+.section__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__titre--h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.8rem;
+  margin-right: 2rem;
+}
+
+.section__commander {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2rem 0 2rem 0;
+}
+
+.section__commander--a {
+  font-size: 1.2rem;
+  border-radius: 2rem;
+  width: 15rem;
+  -webkit-box-shadow: 0 0.3rem 1rem #c7c7c7;
+          box-shadow: 0 0.3rem 1rem #c7c7c7;
+  height: 4rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background-image: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 400;
+}
+
+.article__titre {
+  font-size: 1.2rem;
+  border-bottom: solid #99E2D0;
+  width: 3rem;
+  padding-bottom: 0.3rem;
+}
+
+.article__carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: wrap row;
+          flex-flow: wrap row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: -1rem -1rem 0 -1rem;
+}
+
+.carte {
+  width: 25rem;
+  margin: 1rem;
+  padding: 0 1rem 0 1rem;
+  border-radius: 1.5rem;
+  background-color: white;
+  -webkit-box-shadow: 0 0.3rem 1rem #c7c7c7;
+          box-shadow: 0 0.3rem 1rem #c7c7c7;
+}
+
+.carte__plat {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.footer {
+  background-color: #2f2f2f;
+  color: white;
+  height: 200px;
+  padding: 1rem;
+}
+
+.footer__titre {
+  font-family: "Shrikhand", cursive;
+  font-size: 1.5rem;
+  margin: 0rem 0 0.5rem 1rem;
+}
+
+.footer__liste {
+  list-style: none;
+  font-size: 1.1rem;
+  margin-left: -1.5rem;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__liste--awe i {
+  text-align: center;
+  width: 1rem;
+  margin-right: 1rem;
+}
+/*# sourceMappingURL=lpdg.css.map */

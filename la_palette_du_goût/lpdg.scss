@@ -1,0 +1,139 @@
+$primary-background-color: white;
+$secondary-background-color: rgb(245, 245, 245);
+$primary-color: #9356DC;
+$secondary-color: #FF79DA;
+$third-color: #99E2D0;
+$background-page-color: rgb(231, 231, 231);
+$background-color-footer: rgb(47, 47, 47);
+$primary-box-shadow: 0 0.3rem 1rem rgb(199, 199, 199);
+$font__titre: 'Shrikhand',
+cursive;
+$font__page: 'Roboto',
+sans-serif;
+.page {
+    font-size: 16px;
+    background-color: $background-page-color;
+    font-family: $font__page;
+    font-weight: 100;
+    & a {
+        text-decoration: none;
+    }
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    &__block {
+        height: 5rem;
+        background-color: $primary-background-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--awe {
+            position: absolute;
+            left: 2rem;
+            color: black;
+        }
+        &--logo {
+            font-size: 2rem;
+            font-family: $font__titre;
+        }
+    }
+    &__image {
+        height: 21rem;
+        object-fit: cover;
+        position: relative;
+    }
+}
+
+.section {
+    border-radius: 2.5rem 2.5rem 0 0;
+    background-color: rgb(245, 245, 245);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: -4rem;
+    position: relative;
+    &__titre {
+        display: flex;
+        align-items: center;
+        &--h2 {
+            font-family: $font__titre;
+            font-size: 1.8rem;
+            margin-right: 2rem;
+        }
+    }
+    &__commander {
+        display: flex;
+        justify-content: center;
+        padding: 2rem 0 2rem 0;
+        &--a {
+            font-size: 1.2rem;
+            border-radius: 2rem;
+            width: 15rem;
+            box-shadow: $primary-box-shadow;
+            height: 4rem;
+            background-image: linear-gradient(to bottom right, $secondary-color, $primary-color);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 400;
+        }
+    }
+}
+
+.article {
+    &__titre {
+        font-size: 1.2rem;
+        border-bottom: solid $third-color;
+        width: 3rem;
+        padding-bottom: 0.3rem;
+    }
+    &__carte {
+        display: flex;
+        flex-flow: wrap row;
+        justify-content: space-around;
+        margin: -1rem -1rem 0 -1rem;
+    }
+}
+
+.carte {
+    width: 25rem;
+    margin: 1rem;
+    padding: 0 1rem 0 1rem;
+    border-radius: 1.5rem;
+    background-color: white;
+    box-shadow: $primary-box-shadow;
+    &__plat {
+        font-weight: bold;
+        font-size: 1.2rem;
+    }
+}
+
+.footer {
+    background-color: $background-color-footer;
+    color: white;
+    height: 200px;
+    padding: 1rem;
+    &__titre {
+        font-family: $font__titre;
+        font-size: 1.5rem;
+        margin: 0rem 0 0.5rem 1rem;
+    }
+    &__liste {
+        list-style: none;
+        font-size: 1.1rem;
+        margin-left: -1.5rem;
+        height: 120px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        &--awe {
+            & i {
+                text-align: center;
+                width: 1rem;
+                margin-right: 1rem;
+            }
+        }
+    }
+}
