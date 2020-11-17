@@ -157,6 +157,8 @@ sans-serif;
     box-shadow: $primary-box-shadow;
     position: relative;
     overflow: hidden;
+    text-decoration: none;
+    color: black;
     &__image {
         height: 200px;
         background-color: $secondary-color;
@@ -179,11 +181,9 @@ sans-serif;
             border-radius: 0.1rem;
         }
         & img {
-            object-fit: fill;
+            object-fit: cover;
             width: 100%;
             height: auto;
-            display: flex;
-            margin-bottom: 4rem;
         }
     }
     &__info {

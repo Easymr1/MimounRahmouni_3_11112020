@@ -226,6 +226,8 @@
           box-shadow: 0 0.3rem 1rem #c7c7c7;
   position: relative;
   overflow: hidden;
+  text-decoration: none;
+  color: black;
 }
 
 .carte__image {
@@ -263,14 +265,10 @@
 }
 
 .carte__image img {
-  -o-object-fit: fill;
-     object-fit: fill;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
   height: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 4rem;
 }
 
 .carte__info {
