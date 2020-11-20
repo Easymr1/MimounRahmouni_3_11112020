@@ -33,6 +33,10 @@ sans-serif;
             position: absolute;
             left: 2rem;
             color: black;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
         &--logo {
             font-size: 2rem;
@@ -78,6 +82,11 @@ sans-serif;
             justify-content: center;
             align-items: center;
             font-weight: 400;
+            transition: all 0.4s ease-in-out;
+            &:hover {
+                transform: scale(1.1);
+                box-shadow: 0 0 1rem gray;
+            }
         }
     }
 }
@@ -100,13 +109,46 @@ sans-serif;
 .carte {
     width: 25rem;
     margin: 1rem;
-    padding: 0 1rem 0 1rem;
+    padding: 0 0 0 1rem;
     border-radius: 1.5rem;
     background-color: white;
     box-shadow: $primary-box-shadow;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    overflow: hidden;
     &__plat {
-        font-weight: bold;
         font-size: 1.2rem;
+    }
+    & .bold {
+        font-weight: bold;
+    }
+    &__effet {
+        background-color: #99E2D0;
+        border-radius: 0 1.5rem 1.5rem 0;
+        width: 0;
+        transition: all 0.5s ease-in-out;
+        transform-origin: right;
+        height: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &--rotation {
+            transform: rotate(-270deg);
+            transition: all 0.5s;
+            color: white;
+        }
+    }
+    &:hover>&__effet {
+        width: 5rem;
+        margin-left: 2rem;
+        &>.carte__effet--rotation {
+            transform: rotate(0deg);
+        }
+    }
+    & .prix {
+        margin-right: 0;
     }
 }
 
