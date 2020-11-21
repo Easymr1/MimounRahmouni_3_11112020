@@ -165,6 +165,10 @@
 
 .carte__plat {
   font-size: 1.2rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 22rem;
 }
 
 .carte .bold {
@@ -202,7 +206,7 @@
 
 .carte:hover > .carte__effet {
   width: 5rem;
-  margin-left: 2rem;
+  margin-left: 1rem;
 }
 
 .carte:hover > .carte__effet > .carte__effet--rotation {

@@ -119,6 +119,10 @@ sans-serif;
     overflow: hidden;
     &__plat {
         font-size: 1.2rem;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 22rem;
     }
     & .bold {
         font-weight: bold;
@@ -142,7 +146,7 @@ sans-serif;
     }
     &:hover>&__effet {
         width: 5rem;
-        margin-left: 2rem;
+        margin-left: 1rem;
         &>.carte__effet--rotation {
             transform: rotate(0deg);
         }
