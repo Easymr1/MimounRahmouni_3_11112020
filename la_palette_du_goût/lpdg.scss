@@ -145,7 +145,7 @@ sans-serif;
             color: white;
         }
     }
-    &:active>&__effet {
+    &:hover>&__effet {
         width: 5rem;
         margin-left: 1rem;
         &>.carte__effet--rotation {
