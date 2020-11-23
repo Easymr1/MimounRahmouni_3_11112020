@@ -206,6 +206,7 @@
 }
 
 .carte:hover > .carte__effet {
+  cursor: pointer;
   width: 5rem;
   margin-left: 1rem;
 }

@@ -146,6 +146,7 @@ sans-serif;
         }
     }
     &:hover>&__effet {
+        cursor: pointer;
         width: 5rem;
         margin-left: 1rem;
         &>.carte__effet--rotation {
