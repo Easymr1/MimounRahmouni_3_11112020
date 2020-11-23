@@ -220,6 +220,39 @@
   margin-right: 0;
 }
 
+.carte__ent {
+  -webkit-animation: fadein 2s;
+          animation: fadein 2s;
+}
+
+.carte__pl {
+  -webkit-animation: fadein 3s;
+          animation: fadein 3s;
+}
+
+.carte__des {
+  -webkit-animation: fadein 4s;
+          animation: fadein 4s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .footer {
   background-color: #2f2f2f;
   color: white;

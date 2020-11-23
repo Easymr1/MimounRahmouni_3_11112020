@@ -156,6 +156,24 @@ sans-serif;
     & .prix {
         margin-right: 0;
     }
+    &__ent {
+        animation: fadein 2s;
+    }
+    &__pl {
+        animation: fadein 3s;
+    }
+    &__des {
+        animation: fadein 4s;
+    }
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 .footer {
