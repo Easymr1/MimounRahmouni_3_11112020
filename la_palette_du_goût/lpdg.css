@@ -145,6 +145,7 @@
 
 .carte {
   width: 25rem;
+  cursor: pointer;
   margin: 1rem;
   padding: 0 0 0 1rem;
   border-radius: 1.5rem;
@@ -179,8 +180,8 @@
   background-color: #99E2D0;
   border-radius: 0 1.5rem 1.5rem 0;
   width: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   -webkit-transform-origin: right;
           transform-origin: right;
   height: 100%;
@@ -199,17 +200,17 @@
 .carte__effet--rotation {
   -webkit-transform: rotate(-270deg);
           transform: rotate(-270deg);
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
   color: white;
 }
 
-.carte:hover > .carte__effet {
+.carte:active > .carte__effet {
   width: 5rem;
   margin-left: 1rem;
 }
 
-.carte:hover > .carte__effet > .carte__effet--rotation {
+.carte:active > .carte__effet > .carte__effet--rotation {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }
