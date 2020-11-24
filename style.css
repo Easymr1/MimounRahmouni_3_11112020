@@ -311,6 +311,7 @@
 .carte__info--coeur i:hover {
   -webkit-text-stroke: 0px white;
   background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
