@@ -305,6 +305,10 @@
           flex-direction: column;
 }
 
+.footer__liste a {
+  color: white;
+}
+
 .footer__liste--awe i {
   text-align: center;
   width: 1rem;

@@ -236,6 +236,9 @@ sans-serif;
         display: flex;
         justify-content: space-around;
         flex-direction: column;
+        a {
+            color: white;
+        }
         &--awe {
             & i {
                 text-align: center;
