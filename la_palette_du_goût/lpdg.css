@@ -83,6 +83,7 @@
 }
 
 .section__titre--awe {
+  cursor: pointer;
   color: whitesmoke;
   -webkit-text-stroke: 1px black;
 }
