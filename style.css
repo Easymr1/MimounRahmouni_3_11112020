@@ -295,8 +295,24 @@
   font-weight: bold;
 }
 
+.carte__info--coeur {
+  color: white;
+  -webkit-text-stroke: 1px black;
+}
+
+.carte__info--coeur i {
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+  font-size: 1.5rem;
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+}
+
 .carte__info--coeur i:hover {
-  color: pink;
+  -webkit-text-stroke: 0px white;
+  background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .footer {
