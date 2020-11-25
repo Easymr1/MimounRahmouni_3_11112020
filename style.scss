@@ -152,13 +152,20 @@ sans-serif;
         justify-content: space-around;
         padding-right: 1rem;
         margin-top: -1.5rem;
+        .fas {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 1.5rem 0 2rem;
+            width: 1rem;
+        }
         &--choix {
+            position: relative;
             background-color: $secondary-background-color;
             width: 24rem;
             height: 6rem;
             margin: 1rem;
             display: flex;
-            justify-content: space-around;
             align-items: center;
             counter-increment: li;
             border-radius: 30px;
@@ -168,6 +175,8 @@ sans-serif;
                 content: counter(li);
                 width: 2rem;
                 height: 2rem;
+                position: absolute;
+                left: 1.5rem;
                 border-radius: 1rem;
                 background-color: $primary-color;
                 color: white;
