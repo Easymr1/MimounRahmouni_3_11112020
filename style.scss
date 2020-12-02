@@ -11,6 +11,7 @@ cursive;
 $font__page: 'Roboto',
 sans-serif;
 .page {
+    margin: 0;
     font-size: 16px;
     background-color: $background-page-color;
     font-family: $font__page;
@@ -26,7 +27,7 @@ sans-serif;
     position: absolute;
     left: 50%;
     top: 50%;
-    z-index: 1;
+    z-index: -1;
     width: 150px;
     height: 150px;
     margin: -75px 0 0 -75px;
@@ -35,7 +36,6 @@ sans-serif;
     border-top: 20px solid $primary-color;
     border-bottom: 20px solid $secondary-color;
     animation: spin 1s linear infinite, fadeout ease-in-out 4s;
-    opacity: 0;
 }
 
 @keyframes spin {
@@ -49,10 +49,10 @@ sans-serif;
 
 @keyframes fadeout {
     from {
-        opacity: 1;
+        z-index: 1;
     }
     to {
-        opacity: 0;
+        z-index: -1;
     }
 }
 
@@ -74,7 +74,6 @@ sans-serif;
     background-color: $primary-background-color;
     border: solid rgb(199, 199, 199) 2px;
     box-shadow: 0 0.05rem 0.5rem rgb(199, 199, 199);
-    margin: -10px -10px 0 -10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -104,7 +103,6 @@ sans-serif;
     font-size: 1.2rem;
     text-align: center;
     background-color: rgb(245, 245, 245);
-    margin: 0 -10px 0 -10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,7 +131,6 @@ sans-serif;
 .nav {
     background-color: $primary-background-color;
     font-size: 1.2rem;
-    margin: 0 -10px 0 -10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -160,6 +157,7 @@ sans-serif;
             width: 1rem;
         }
         &--choix {
+            color: black;
             position: relative;
             background-color: $secondary-background-color;
             width: 24rem;
@@ -171,6 +169,11 @@ sans-serif;
             border-radius: 30px;
             background-color: $secondary-background-color;
             box-shadow: $primary-box-shadow;
+            transition: all 400ms ease-in-out;
+            &:hover {
+                filter: brightness(1.1);
+                box-shadow: 0 0 2rem gray;
+            }
             &::before {
                 content: counter(li);
                 width: 2rem;
@@ -217,6 +220,11 @@ sans-serif;
     overflow: hidden;
     text-decoration: none;
     color: black;
+    transition: all 400ms ease-in-out;
+    &:hover {
+        filter: brightness(1.1);
+        box-shadow: 0 0 2rem gray;
+    }
     &__image {
         height: 200px;
         background-color: $secondary-color;
@@ -278,7 +286,6 @@ sans-serif;
 .footer {
     background-color: $background-color-footer;
     color: white;
-    margin: 0 -10px -10px -10px;
     height: 200px;
     padding: 1rem;
     &__titre {

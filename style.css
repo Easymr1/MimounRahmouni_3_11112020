@@ -1,4 +1,5 @@
 .page {
+  margin: 0;
   font-size: 16px;
   background-color: #e7e7e7;
   font-family: "Roboto", sans-serif;
@@ -15,7 +16,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
-  z-index: 1;
+  z-index: -1;
   width: 150px;
   height: 150px;
   margin: -75px 0 0 -75px;
@@ -25,7 +26,6 @@
   border-bottom: 20px solid #FF79DA;
   -webkit-animation: spin 1s linear infinite, fadeout ease-in-out 4s;
           animation: spin 1s linear infinite, fadeout ease-in-out 4s;
-  opacity: 0;
 }
 
 @-webkit-keyframes spin {
@@ -52,19 +52,19 @@
 
 @-webkit-keyframes fadeout {
   from {
-    opacity: 1;
+    z-index: 1;
   }
   to {
-    opacity: 0;
+    z-index: -1;
   }
 }
 
 @keyframes fadeout {
   from {
-    opacity: 1;
+    z-index: 1;
   }
   to {
-    opacity: 0;
+    z-index: -1;
   }
 }
 
@@ -97,7 +97,6 @@
   border: solid #c7c7c7 2px;
   -webkit-box-shadow: 0 0.05rem 0.5rem #c7c7c7;
           box-shadow: 0 0.05rem 0.5rem #c7c7c7;
-  margin: -10px -10px 0 -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -142,7 +141,6 @@
   font-size: 1.2rem;
   text-align: center;
   background-color: whitesmoke;
-  margin: 0 -10px 0 -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -189,7 +187,6 @@
 .nav {
   background-color: white;
   font-size: 1.2rem;
-  margin: 0 -10px 0 -10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -241,6 +238,7 @@
 }
 
 .nav__liste--choix {
+  color: black;
   position: relative;
   background-color: whitesmoke;
   width: 24rem;
@@ -257,6 +255,15 @@
   background-color: whitesmoke;
   -webkit-box-shadow: 0 0.3rem 1rem #c7c7c7;
           box-shadow: 0 0.3rem 1rem #c7c7c7;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.nav__liste--choix:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0 0 2rem gray;
+          box-shadow: 0 0 2rem gray;
 }
 
 .nav__liste--choix::before {
@@ -325,6 +332,15 @@
   overflow: hidden;
   text-decoration: none;
   color: black;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.carte:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0 0 2rem gray;
+          box-shadow: 0 0 2rem gray;
 }
 
 .carte__image {
@@ -416,7 +432,6 @@
 .footer {
   background-color: #2f2f2f;
   color: white;
-  margin: 0 -10px -10px -10px;
   height: 200px;
   padding: 1rem;
 }
