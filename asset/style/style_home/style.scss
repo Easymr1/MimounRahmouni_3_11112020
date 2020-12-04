@@ -1,6 +1,9 @@
 @import "../sass/abstracts/variables";
 @import "../sass/base/reset";
 @import "../sass/components/loader";
+@import "../sass/components/coeur";
+@import "../sass/layout/footer";
+@import "../sass/layout/nav";
 .block {
     height: 100px;
     background-color: $primary-background-color;
@@ -57,71 +60,6 @@
         justify-content: center;
         align-items: center;
         font-weight: bold;
-    }
-}
-
-.nav {
-    background-color: $primary-background-color;
-    font-size: 1.2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-bottom: 2rem;
-    font-weight: bold;
-    & h2 {
-        margin-left: 1.5rem;
-        margin-top: 3rem;
-        font-size: 1.8rem;
-    }
-    &__liste {
-        position: relative;
-        list-style: none;
-        counter-reset: li;
-        display: flex;
-        flex-flow: wrap row;
-        justify-content: space-around;
-        padding-right: 1rem;
-        margin-top: -1.5rem;
-        &--awe {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            margin: 0 1.5rem 0 2rem;
-            width: 1rem;
-        }
-        &--choix {
-            color: black;
-            position: relative;
-            background-color: $secondary-background-color;
-            width: 21rem;
-            height: 6rem;
-            margin: 1rem;
-            display: flex;
-            align-items: center;
-            counter-increment: li;
-            border-radius: 30px;
-            background-color: $secondary-background-color;
-            box-shadow: $primary-box-shadow;
-            transition: all 400ms ease-in-out;
-            &:hover {
-                filter: brightness(1.1);
-                box-shadow: 0 0 2rem gray;
-            }
-            &::before {
-                content: counter(li);
-                width: 2rem;
-                height: 2rem;
-                position: absolute;
-                left: 1.5rem;
-                border-radius: 1rem;
-                background-color: $primary-color;
-                color: white;
-                margin-left: -2.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-            }
-        }
     }
 }
 
@@ -203,6 +141,3 @@
         }
     }
 }
-
-@import "../sass/components/coeur";
-@import "../sass/layout/footer";
