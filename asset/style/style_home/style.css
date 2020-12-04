@@ -110,7 +110,7 @@
 
 .block__logo {
   font-family: "Shrikhand", cursive;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .search {
@@ -124,7 +124,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   font-weight: bold;
 }
 
@@ -413,15 +413,15 @@
   -webkit-text-stroke: 1px black;
 }
 
-.carte__info--coeur i {
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-  font-size: 1.5rem;
+.coeur {
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+  font-size: 1.3rem;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }
 
-.carte__info--coeur i:hover {
+.coeur:hover {
   -webkit-text-stroke: 0px white;
   background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
   background-clip: text;

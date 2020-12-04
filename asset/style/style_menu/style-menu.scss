@@ -1,15 +1,5 @@
-@import "sass/abstracts/variables";
-.page {
-    margin: 0rem;
-    font-size: 16px;
-    background-color: $background-page-color;
-    font-family: $font__page;
-    font-weight: 100;
-    & a {
-        text-decoration: none;
-    }
-}
-
+@import "../sass/abstracts/variables";
+@import "../sass/base/reset";
 .header {
     display: flex;
     flex-direction: column;
@@ -59,19 +49,6 @@
             cursor: pointer;
             color: $secondary-background-color;
             -webkit-text-stroke: 1px black;
-            i {
-                transition: all 400ms ease-in-out;
-                font-size: 1.2rem;
-                padding: 0.1rem;
-                transform-origin: bottom;
-            }
-            i:hover {
-                -webkit-text-stroke: 0px white;
-                background: -webkit-linear-gradient(bottom, $secondary-color, $primary-color);
-                background-clip: text;
-                -webkit-background-clip: text;
-                -webkit-text-fill-color: transparent;
-            }
         }
     }
     &__commander {
@@ -99,6 +76,7 @@
     }
 }
 
+@import "../sass/components/coeur";
 .article {
     &__titre {
         font-size: 1.2rem;
@@ -183,3 +161,5 @@
         opacity: 1;
     }
 }
+
+@import "../sass/layout/footer";

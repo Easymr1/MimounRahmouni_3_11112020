@@ -1,0 +1,12 @@
+.coeur {
+    transition: all 200ms ease-in-out;
+    font-size: 1.3rem;
+    transform-origin: bottom;
+    &:hover {
+        -webkit-text-stroke: 0px white;
+        background: -webkit-linear-gradient(bottom, $secondary-color, $primary-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
