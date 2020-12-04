@@ -14,7 +14,7 @@
     border-radius: 50%;
     border-top: 20px solid $primary-color;
     border-bottom: 20px solid $secondary-color;
-    animation: spin 1s linear infinite, fadeout ease-in-out 4s;
+    animation: spin 1s linear infinite, fadeout ease-in-out 2s;
 }
 
 @keyframes spin {
@@ -36,7 +36,7 @@
 }
 
 #effet__page {
-    animation: fadein 3s cubic-bezier(1, -0.89, 1, -1);
+    animation: fadein 2s cubic-bezier(1, -0.89, 1, -1);
 }
 
 @keyframes fadein {
