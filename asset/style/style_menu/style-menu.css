@@ -133,7 +133,7 @@
 .coeur {
   -webkit-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   -webkit-transform-origin: bottom;
           transform-origin: bottom;
 }

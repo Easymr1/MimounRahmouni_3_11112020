@@ -74,6 +74,7 @@
         font-size: 1.8rem;
     }
     &__liste {
+        position: relative;
         list-style: none;
         counter-reset: li;
         display: flex;
@@ -81,7 +82,7 @@
         justify-content: space-around;
         padding-right: 1rem;
         margin-top: -1.5rem;
-        .fas {
+        &--awe {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -92,7 +93,7 @@
             color: black;
             position: relative;
             background-color: $secondary-background-color;
-            width: 24rem;
+            width: 21rem;
             height: 6rem;
             margin: 1rem;
             display: flex;
