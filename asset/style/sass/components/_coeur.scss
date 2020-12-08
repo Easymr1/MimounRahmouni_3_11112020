@@ -3,9 +3,8 @@
     font-size: 1.5rem;
     transform-origin: bottom;
     &:hover {
-        -webkit-text-stroke: 0px white;
+        -webkit-text-stroke: 0px transparent;
         background: -webkit-linear-gradient(bottom, $secondary-color, $primary-color);
-        background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }

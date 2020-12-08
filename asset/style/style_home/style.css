@@ -119,9 +119,8 @@
 }
 
 .coeur:hover {
-  -webkit-text-stroke: 0px white;
+  -webkit-text-stroke: 0px transparent;
   background: -webkit-linear-gradient(bottom, #FF79DA, #9356DC);
-  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
