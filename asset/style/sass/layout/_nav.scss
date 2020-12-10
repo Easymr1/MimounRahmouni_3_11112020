@@ -43,11 +43,6 @@
             border-radius: 30px;
             background-color: $secondary-background-color;
             box-shadow: $primary-box-shadow;
-            transition: all 400ms ease-in-out;
-            &:hover {
-                filter: brightness(1.1);
-                box-shadow: 0 0 2rem gray;
-            }
             &::before {
                 content: counter(li);
                 width: 2rem;

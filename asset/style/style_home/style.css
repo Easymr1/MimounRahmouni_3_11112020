@@ -10,6 +10,18 @@
   text-decoration: none;
 }
 
+.button {
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+}
+
+.button:hover {
+  -webkit-filter: brightness(1.1);
+          filter: brightness(1.1);
+  -webkit-box-shadow: 0 0 2rem gray;
+          box-shadow: 0 0 2rem gray;
+}
+
 #loader {
   width: 200px;
   height: 200px;
@@ -240,15 +252,6 @@
   background-color: whitesmoke;
   -webkit-box-shadow: 0 0.3rem 1rem #c7c7c7;
           box-shadow: 0 0.3rem 1rem #c7c7c7;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-}
-
-.nav__liste--choix:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-  -webkit-box-shadow: 0 0 2rem gray;
-          box-shadow: 0 0 2rem gray;
 }
 
 .nav__liste--choix::before {
@@ -410,15 +413,6 @@
   overflow: hidden;
   text-decoration: none;
   color: black;
-  -webkit-transition: all 400ms ease-in-out;
-  transition: all 400ms ease-in-out;
-}
-
-.carte:hover {
-  -webkit-filter: brightness(1.1);
-          filter: brightness(1.1);
-  -webkit-box-shadow: 0 0 2rem gray;
-          box-shadow: 0 0 2rem gray;
 }
 
 .carte__image {
