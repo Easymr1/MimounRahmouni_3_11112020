@@ -1,22 +1,22 @@
 # Projet3
 
-Description 
+● Description 
 
 Je suis Développeur junior sur le projet Ohmyfood, jeune start-up qui voudrait s'imposer sur le marché de la restauration.
 
-Contraintes techniques
+● Contraintes techniques
 
-● Le développement est fait en HTML et CSS, sans JavaScript.
-● Aucun framework n'a été utilisé.
-● Sass a été utilisé pour structurer le CSS.
-● Git et GitHub utilisés sur le projet.
+- Le développement est fait en HTML et CSS, sans JavaScript.
+- Aucun framework n'a été utilisé.
+- Sass a été utilisé pour structurer le CSS.
+- Git et GitHub utilisés sur le projet.
 
-Compatibilité
+● Compatibilité
 
-● Aucun code CSS appliqué via un attribut style dans une balise HTML.
-● Site responsive sur tous les types de supports.
-● Validation W3C sans erreur pour l'ensemble du projet CSS et HTML.
-● Le site est compatible avec les dernières versions de Chrome et Firefox.
+- Aucun code CSS appliqué via un attribut style dans une balise HTML.
+- Site responsive sur tous les types de supports.
+- Validation W3C sans erreur pour l'ensemble du projet CSS et HTML.
+- Le site est compatible avec les dernières versions de Chrome et Firefox.
 
 Livrable
 
